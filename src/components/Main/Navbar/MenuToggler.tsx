@@ -26,11 +26,11 @@ function MenuToggler({ menuListRef }: MenuTogglerProps): JSX.Element {
     function handleMenuToggleClick() {
         const menuList = menuListRef.current;
         if (isMenuToggled.current) {
-            menuList && menuList.classList.toggle('top-12');
+            menuList && menuList.classList.toggle('top-[0rem]');
             menuList && menuList.classList.add('opacity-0');
             isMenuToggled.current = false;
         } else {
-            menuList && menuList.classList.add('top-12');
+            menuList && menuList.classList.add('top-[0rem]');
             menuList && menuList.classList.toggle('opacity-0');
             isMenuToggled.current = true;
         }

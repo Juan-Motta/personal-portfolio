@@ -40,9 +40,11 @@ function Hero(): JSX.Element {
 
     return (
         <section className="flex flex-col justify-center items-center h-screen">
-            <span className="text-3xl mb-12 select-none">Hola, 👋🏻 soy</span>
+            <span className="text-3xl mb-12 select-none font-bold">
+                Hola, 👋🏻 soy
+            </span>
             <h1
-                className="text-9xl mb-16 font-bold animate-gradient select-none"
+                className="text-9xl break-words mb-16 font-bold animate-gradient select-none text-center"
                 style={{
                     background:
                         '-webkit-linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5, #23d5ab)',
@@ -53,10 +55,10 @@ function Hero(): JSX.Element {
             >
                 Juan Motta
             </h1>
-            <span className="text-3xl mb-20 select-none">
+            <span className="text-3xl mb-20 select-none font-bold text-center">
                 Desarrollador web full stack.
             </span>
-            <div className="flex gap-8 mb-20">
+            <div className="flex gap-8 mb-20 md:flex-row flex-col">
                 <HeroButton>
                     <span>
                         <DownloadIcon
