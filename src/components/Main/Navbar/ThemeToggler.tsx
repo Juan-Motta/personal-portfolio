@@ -31,12 +31,12 @@ function ThemeToggler(): JSX.Element {
                     <SunIcon
                         width="24"
                         height="24"
-                        strokeWidth="0.1"
+                        strokeWidth="1"
+                        fill="#ffffff"
+                        stroke="#ffffff"
                         className="cursor-pointer"
                         viewBox="0 0 24 24"
-                        transform="rotate(15)"
-                        stroke="none"
-                        fill={theme === 'dark' ? '#ffffff' : '#000000'}
+                        transform="rotate(0)"
                     />
                 </span>
             ) : (
@@ -44,12 +44,12 @@ function ThemeToggler(): JSX.Element {
                     <MoonIcon
                         width="24"
                         height="24"
-                        strokeWidth="1.5"
+                        strokeWidth="1"
                         className="cursor-pointer"
                         viewBox="0 2 24 24"
                         transform="rotate(15)"
-                        stroke={theme === 'dark' ? '#ffffff' : '#000000'}
-                        fill={theme === 'dark' ? '#ffffff' : '#000000'}
+                        stroke="#000000"
+                        fill="#000000"
                     />
                 </span>
             )}

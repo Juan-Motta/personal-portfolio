@@ -46,13 +46,13 @@ function Navbar(): JSX.Element {
                 ref={menuListRef}
                 className="flex text-lg md:flex-row flex-col items-center gap-5 md:static absolute py-16 md:py-0 -top-60 transition-all duration-300 md:transition-none md:duration-0 opacity-0 md:opacity-100"
             >
-                <li className="hover:scale-110 hover:font-bold transition-scale duration-100 cursor-pointer">
+                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer">
                     <Link href={'#'}>Acerca de mí</Link>
                 </li>
-                <li className="hover:scale-110 hover:font-bold transition-scale duration-100 cursor-pointer">
+                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer">
                     <Link href={'#'}>Proyectos</Link>
                 </li>
-                <li className="hover:scale-110 hover:font-bold transition-scale duration-100 cursor-pointer">
+                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer">
                     <Link href={'#'}>Contácto</Link>
                 </li>
                 <li>
