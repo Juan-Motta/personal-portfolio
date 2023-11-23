@@ -35,7 +35,7 @@ function Navbar(): JSX.Element {
         <nav className="mt-5 flex justify-between items-center md:flex-row flex-col">
             <div className="flex w-full justify-between md:w-auto">
                 {/* prettier-ignore */}
-                <Link href={"#"} className="text-4xl font-extrabold text hover:scale-110 transition-scale duration-100 cursor-pointer whitespace-pre-wrap">
+                <Link href={"#"} className="text-4xl font-extrabold text hover:scale-110 transition-scale duration-100 cursor-pointer whitespace-pre-wrap select-none">
                     {"{  juan  }"}
                 </Link>
                 <div className="md:hidden">
@@ -46,13 +46,13 @@ function Navbar(): JSX.Element {
                 ref={menuListRef}
                 className="flex text-lg md:flex-row flex-col items-center gap-5 md:static absolute py-16 md:py-0 -top-60 transition-all duration-300 md:transition-none md:duration-0 opacity-0 md:opacity-100"
             >
-                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer">
+                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer select-none">
                     <Link href={'#'}>Acerca de mí</Link>
                 </li>
-                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer">
+                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer select-none">
                     <Link href={'#'}>Proyectos</Link>
                 </li>
-                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer">
+                <li className="hover:font-extrabold transition-scale duration-100 cursor-pointer select-none">
                     <Link href={'#'}>Contácto</Link>
                 </li>
                 <li>
