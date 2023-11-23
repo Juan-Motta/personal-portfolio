@@ -3,25 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --mw-document: 1200px;
+    --p-u-center: 0 32px;
+    /*   Text and Background Styles*/
+    --background: #202124;
+    --foreground: #e8eaed;
+    /*   Navbar Styles*/
+    --hover-nav: rgba(232, 234, 237, 0.2);
+    --text-secondary: #9aa0a6;
+    --nav-shadow: #141719;
+  
+    /*   Buttons and Icon Styles*/
+    --bg-buttons: #604a84;
+    --bg-hover: hsla(0, 0%, 100%, 0.18);
+    --text-buttons: #f8faff;
+    --socials-buttons: #a8acb3;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  [data-theme="light"] {
+    /*   Text and Background Styles*/
+    --background: #fff;
+    --foreground: #0f0f0f;
+  
+    /*   Navbar Styles*/
+    --hover-nav: rgba(32, 33, 36, 0.04);
+    --text-secondary: #5f6368;
+    --nav-shadow: #d5d6d8;
+    --socials-buttons: #57606a;
+    --bg-hover: hsla(0, 0%, 0%, 0.08);
+  }
