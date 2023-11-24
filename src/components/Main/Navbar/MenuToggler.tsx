@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import { useTheme } from 'next-themes';
 
 import { MenuIcon } from '@/components/Shared/Icons/MenuIcon';
 import { MenuTogglerProps } from '@/types/Main/Navbar/MenuToggler';
@@ -20,7 +19,6 @@ import { MenuTogglerProps } from '@/types/Main/Navbar/MenuToggler';
  * @returns {JSX.Element} A JSX element representing the toggle button.
  */
 function MenuToggler({ menuListRef }: MenuTogglerProps): JSX.Element {
-    const { theme } = useTheme();
     const isMenuToggled = useRef(false);
 
     function handleMenuToggleClick() {
@@ -39,19 +37,10 @@ function MenuToggler({ menuListRef }: MenuTogglerProps): JSX.Element {
     return (
         <button
             onClick={handleMenuToggleClick}
-            className="align-middle hover:bg-[var(--hover-nav)] rounded-full p-3"
+            className="align-middle hover:bg-[var(--hover-nav)] rounded-full"
         >
             <span>
-                <MenuIcon
-                    width="32"
-                    height="32"
-                    strokeWidth="2.5"
-                    fill="none"
-                    className="cursor-pointer"
-                    viewBox="0 0 24 24"
-                    transform="rotate(0)"
-                    stroke={theme === 'dark' ? '#ffffff' : '#000000'}
-                />
+                <MenuIcon className="w-[42px] h-[42px] stroke-black dark:stroke-white stroke-[3]" />
             </span>
         </button>
     );

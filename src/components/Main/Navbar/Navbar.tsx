@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
 
 import { ThemeToggler } from './ThemeToggler';
@@ -16,20 +16,6 @@ import { MenuToggler } from './MenuToggler';
  */
 function Navbar(): JSX.Element {
     const menuListRef = useRef<HTMLUListElement>(null);
-    const [mounted, setMounted] = useState(false);
-
-    /**
-     * This is a hack to prevent the menu from being shown on page load to avoid
-     * hydration mismatch error.
-     * https://www.npmjs.com/package/next-themes#avoid-hydration-mismatch
-     */
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
-        return <></>;
-    }
 
     return (
         <nav className="mt-5 flex justify-between items-center md:flex-row flex-col">

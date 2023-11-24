@@ -1,5 +1,4 @@
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
 
 import { MoonIcon } from '@/components/Shared/Icons/MoonIcon';
 import { SunIcon } from '@/components/Shared/Icons/SunIcon';
@@ -28,29 +27,11 @@ function ThemeToggler(): JSX.Element {
         >
             {theme === 'dark' ? (
                 <span>
-                    <SunIcon
-                        width="24"
-                        height="24"
-                        strokeWidth="1"
-                        fill="#ffffff"
-                        stroke="#ffffff"
-                        className="cursor-pointer"
-                        viewBox="0 0 24 24"
-                        transform="rotate(0)"
-                    />
+                    <SunIcon className="h-[40px] w-[40px] md:h-[28px] md:w-[28px] stroke-black dark:stroke-white" />
                 </span>
             ) : (
                 <span>
-                    <MoonIcon
-                        width="24"
-                        height="24"
-                        strokeWidth="1"
-                        className="cursor-pointer"
-                        viewBox="0 2 24 24"
-                        transform="rotate(15)"
-                        stroke="#000000"
-                        fill="#000000"
-                    />
+                    <MoonIcon className="h-[40px] w-[40px] md:h-[24px] md:w-[24px] stroke-black dark:stroke-white" />
                 </span>
             )}
         </button>

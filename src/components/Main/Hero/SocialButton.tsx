@@ -14,12 +14,12 @@ import { HeroButtonProps } from '@/types/Main/Hero/HeroButton';
  *
  * @returns {JSX.Element} A JSX element representing the HeroButton.
  */
-function HeroButton({ children }: HeroButtonProps): JSX.Element {
+function SocialButton({ children }: HeroButtonProps): JSX.Element {
     return (
-        <button className="bg-[#e73c7e] px-5 py-3 text-lg md:text-2xl rounded-md font-bold flex gap-2 hover:scale-110 transition-transform duration-300 select-none">
+        <button className="hover:scale-110 transition-transform duration-300 select-none">
             {children}
         </button>
     );
 }
 
-export { HeroButton };
+export { SocialButton };

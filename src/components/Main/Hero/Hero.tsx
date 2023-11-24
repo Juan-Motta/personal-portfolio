@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
-import { useTheme } from 'next-themes';
-
 import { HeroButton } from './HeroButton';
+import { SocialButton } from './SocialButton';
 
 import { SendIcon } from '@/components/Shared/Icons/SendIcon';
 import { DownloadIcon } from '@/components/Shared/Icons/DownloadIcon';
+import { GithubIcon } from '@/components/Shared/Icons/GithubIcon';
+import { LinkedinIcon } from '@/components/Shared/Icons/LinkedinIcon';
+import { MailIcon } from '@/components/Shared/Icons/MailIcon';
 
 /**
  * Hero Component
@@ -27,24 +28,16 @@ import { DownloadIcon } from '@/components/Shared/Icons/DownloadIcon';
  * * @returns {JSX.Element} A JSX element representing the Hero banner.
  */
 function Hero(): JSX.Element {
-    const [mounted, setMounted] = useState(false);
-    const { theme } = useTheme();
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
-        return <></>;
-    }
-
     return (
-        <section className="flex flex-col justify-center items-center h-screen">
-            <span className="text-xl md:text-3xl mb-12 select-none font-bold">
+        <section
+            className="flex flex-col justify-center items-center md:gap-20 gap-10"
+            style={{ height: 'calc(100vh - 80px)' }}
+        >
+            <span className="text-xl md:text-3xl select-none font-bold">
                 Hola, 👋🏻 soy
             </span>
             <h1
-                className="text-7xl md:text-9xl break-words mb-16 font-bold animate-gradient select-none text-center"
+                className="text-7xl md:text-9xl break-words font-bold animate-gradient select-none text-center"
                 style={{
                     background:
                         '-webkit-linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5, #23d5ab)',
@@ -55,31 +48,33 @@ function Hero(): JSX.Element {
             >
                 Juan Motta
             </h1>
-            <span className="text-xl md:text-3xl mb-20 select-none font-bold text-center">
+            <span className="text-xl md:text-3xl select-none font-bold text-center">
                 Desarrollador web full stack.
             </span>
-            <div className="flex gap-8 mb-20 md:flex-row flex-col">
+            <div className="flex gap-8 md:flex-row flex-col">
                 <HeroButton>
                     <span className="flex items-center h-full">
-                        <SendIcon
-                            strokeWidth="2.5"
-                            transform="rotate(0)"
-                            stroke={theme === 'dark' ? '#fff' : '#000'}
-                            className="h-[26px] w-[26px]"
-                        />
+                        <SendIcon className="h-[26px] w-[26px] stroke-black dark:stroke-white stroke-[2.5] fill-none" />
                     </span>
                     Contactame
                 </HeroButton>
                 <HeroButton>
                     <span className="flex items-center h-full">
-                        <DownloadIcon
-                            strokeWidth="2.5"
-                            stroke={theme === 'dark' ? '#fff' : '#000'}
-                            className="h-[28px] w-[28px]"
-                        />
+                        <DownloadIcon className="h-[28px] w-[28px] stroke-black dark:stroke-white stroke-[2.5]" />
                     </span>
                     Descargar CV
                 </HeroButton>
+            </div>
+            <div className="flex gap-5">
+                <SocialButton>
+                    <GithubIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
+                </SocialButton>
+                <SocialButton>
+                    <LinkedinIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
+                </SocialButton>
+                <SocialButton>
+                    <MailIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
+                </SocialButton>
             </div>
         </section>
     );
