@@ -6,6 +6,7 @@ import { DownloadIcon } from '@/components/Shared/Icons/DownloadIcon';
 import { GithubIcon } from '@/components/Shared/Icons/GithubIcon';
 import { LinkedinIcon } from '@/components/Shared/Icons/LinkedinIcon';
 import { MailIcon } from '@/components/Shared/Icons/MailIcon';
+import Link from 'next/link';
 
 /**
  * Hero Component
@@ -66,12 +67,20 @@ function Hero(): JSX.Element {
                 </HeroButton>
             </div>
             <div className="flex gap-5">
-                <SocialButton>
+                <Link
+                    href="https://github.com/Juan-Motta"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
                     <GithubIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
-                </SocialButton>
-                <SocialButton>
+                </Link>
+                <Link
+                    href="https://www.linkedin.com/in/jualopezmo/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
                     <LinkedinIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
-                </SocialButton>
+                </Link>
                 <SocialButton>
                     <MailIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
                 </SocialButton>
