@@ -73,17 +73,17 @@ function Hero(): JSX.Element {
                     rel="noopener noreferrer"
                     target="_blank"
                 >
-                    <GithubIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
+                    <GithubIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform hover:stroke-[#e73c7e] dark:hover:stroke-[#e73c7e]" />
                 </Link>
                 <Link
                     href="https://www.linkedin.com/in/jualopezmo/"
                     rel="noopener noreferrer"
                     target="_blank"
                 >
-                    <LinkedinIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
+                    <LinkedinIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform hover:stroke-[#e73c7e] dark:hover:stroke-[#e73c7e]" />
                 </Link>
                 <SocialButton>
-                    <MailIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform" />
+                    <MailIcon className="stroke-black dark:stroke-white fill-none stroke-2  w-[48px] h-[48px] hover:scale-125 transition-transform hover:stroke-[#e73c7e] dark:hover:stroke-[#e73c7e]" />
                 </SocialButton>
             </div>
         </section>
