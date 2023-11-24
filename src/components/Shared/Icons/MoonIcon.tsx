@@ -1,34 +1,18 @@
-import { IconProps } from "@/types/Shated/Icons/IconProps";
+import { IconProps } from '@/types/Shated/Icons/IconProps';
 
 function MoonIcon({
-    width = "64",
-    height = "64",
-    viewBox = "-2.4 -2.4 28.80 28.80",
-    fill = "none",
-    xmlns = "http://www.w3.org/2000/svg",
-    transform = "rotate(0)",
-    stroke = "#000000",
-    strokeWidth = "1.2",
-    strokeLinecap = "round",
-    strokeLinejoin = "round",
-    className = "",
+    viewBox = '-2.4 -2.4 28.80 28.80',
+    xmlns = 'http://www.w3.org/2000/svg',
+    className = '',
 }: IconProps) {
     return (
-        <svg
-            width={width}
-            height={height}
-            viewBox={viewBox}
-            fill={fill}
-            xmlns={xmlns}
-            transform={transform}
-            className={className}
-        >
+        <svg viewBox={viewBox} xmlns={xmlns} className={className}>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path
-                d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
-                stroke={stroke}
-                strokeWidth={strokeWidth}
-                strokeLinejoin={strokeLinejoin}
-            ></path>
+                d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
+                stroke-width="0"
+                fill="currentColor"
+            />
         </svg>
     );
 }
