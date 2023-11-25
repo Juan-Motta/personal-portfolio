@@ -12,6 +12,10 @@
     --dark-transparent-gray-background: rgba(232, 234, 237, 0.1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .vertical-timeline-element-content:hover {
     /* overrides elemnt content styles for react-vertical-timeline-component */
     background-color: var(--light-transparent-gray-background) !important;

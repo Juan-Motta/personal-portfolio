@@ -2,7 +2,10 @@ import { TimeLine } from './TimeLine';
 
 function About() {
     return (
-        <section className="flex flex-col items-center pt-10 justify-center overflow-hidden mb-[15rem]">
+        <section
+            id="about"
+            className="flex flex-col items-center pt-10 justify-center overflow-hidden mb-[15rem]"
+        >
             <h1 className="text-5xl font-bold pb-10 text-center">
                 Acerca de mi
             </h1>
