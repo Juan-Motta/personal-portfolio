@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { HeroButton } from './HeroButton';
 import { SocialButton } from './SocialButton';
 
+import { GithubIcon } from '@/components/Shared/Icons/GithubIcon';
+import { MailIcon } from '@/components/Shared/Icons/MailIcon';
+import { LinkedinIcon } from '@/components/Shared/Icons/LinkedinIcon';
 import { SendIcon } from '@/components/Shared/Icons/SendIcon';
 import { DownloadIcon } from '@/components/Shared/Icons/DownloadIcon';
-import { GithubIcon } from '@/components/Shared/Icons/GithubIcon';
-import { LinkedinIcon } from '@/components/Shared/Icons/LinkedinIcon';
-import { MailIcon } from '@/components/Shared/Icons/MailIcon';
 
 /**
  * Hero Component

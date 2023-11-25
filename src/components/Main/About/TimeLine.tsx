@@ -8,7 +8,6 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { SchoolIcon } from '@/components/Shared/Icons/SchoolIcon';
 import { BriefcaseIcon } from '@/components/Shared/Icons/BriefcaseIcon';
-import { BookIcon } from '@/components/Shared/Icons/BookIcon';
 
 const workHistory = [
     {
@@ -77,11 +76,11 @@ function TimeLine() {
     }
 
     return (
-        <div className="w-full">
+        <div className="flex flex-col w-full min-h-screen justify-center">
             <h2 className="text-5xl font-bold mb-10 text-center">
                 Mi trayectoria
             </h2>
-            <div className="flex gap-10 justify-center text-xl font-bold mb-10">
+            <div className="flex justify-center gap-10 text-xl font-bold mb-10">
                 <button
                     onClick={handleChangeJobTrayectory}
                     className={`flex gap-2 justify-center items-center pb-1 dark:border-white border-black ${
@@ -97,11 +96,11 @@ function TimeLine() {
                         showEducation ? 'border-b-[3px]' : 'border-b-[0px]'
                     }`}
                 >
-                    <BookIcon className="dark:stroke-white stroke-black fill-none h-[28px] w-[28px] stroke-2" />
+                    <SchoolIcon className="dark:stroke-white stroke-black fill-none h-[28px] w-[28px] stroke-2" />
                     <span>Educación</span>
                 </button>
             </div>
-            <div className="w-[80%] mx-auto">
+            <div className="lg:mr-12 justify-center mx-auto lg:w-[95%]">
                 <VerticalTimeline
                     lineColor={theme === 'dark' ? 'white' : 'black'}
                 >
